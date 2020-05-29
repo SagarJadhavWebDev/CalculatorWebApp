@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+<title>Calculator Program</title>
+<style type="text/css">
+body{
+font-family: Poppins;
+}
+input{
+max-width:100%;
+border:none;
+outline:none;
+}
+input:hover{
+border:none;
+outline:none;
+}
+.w{
+width:100%;
+}
+.br{
+display:block;
+margin-bottom:15px;
+}
+.ma{
+border:1px black;
+border-style: double;
+}
+</style>
+</head>
+<body>
+<br>
+<br>
+<center><b>
+<h3 class=" w3-padding w3-text-deep-purple w3-border-red w3-leftbar "><b>BASIC CALCULATOR</h3>
+</center>
+</br>
+<FORM NAME="Calc">
+<center>
+<div class=" w w3-round-xlarge w3-padding w3-xlarge w3-card-4 w3-margin">
+<span class="br"></span>
+<INPUT class="w3-round-xlarge w3-padding ma " TYPE="text"   NAME="Input" Size="16">
+<span class="br"></span>
+<div>
+<INPUT class=" w3-card w3-blue w3-padding w3-round-large " TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
+<INPUT class="w3-card  w3-blue w3-padding w3-round-large " TYPE="button" NAME="two"   VALUE="  2  " OnClick="Calc.Input.value += '2'">
+<INPUT class="w3-card w3-blue w3-padding w3-round-large " TYPE="button" NAME="three"   VALUE="  3  " OnClick="Calc.Input.value += '3'">
+<INPUT class="w3-card w3-green w3-padding w3-round-large "TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
+</div>
+<span class="br"></span>
+<div>
+<INPUT class=" w3-card w3-blue w3-padding w3-round-large " TYPE="button" NAME="four"   VALUE="  4  " OnClick="Calc.Input.value += '4'">
+<INPUT class="w3-card  w3-blue w3-padding w3-round-large " TYPE="button" NAME="five"   VALUE="  5  " OnClick="Calc.Input.value += '5'">
+<INPUT class="w3-card w3-blue w3-padding w3-round-large " TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
+<INPUT class="w3-card w3-green w3-padding w3-round-large "TYPE="button" NAME="minus"  VALUE="  -  " OnClick="Calc.Input.value += ' - '">
+</div>
+<span class="br"></span>
+<div>
+<INPUT class=" w3-card w3-blue w3-padding w3-round-large " TYPE="button" NAME="seven"   VALUE="  7  " OnClick="Calc.Input.value += '7'">
+<INPUT class="w3-card  w3-blue w3-padding w3-round-large " TYPE="button" NAME="eight"   VALUE="  8  " OnClick="Calc.Input.value += '8'">
+<INPUT class="w3-card w3-blue w3-padding w3-round-large " TYPE="button" NAME="nine"   VALUE="  9  " OnClick="Calc.Input.value += '9'">
+<INPUT class="w3-card w3-green w3-padding w3-round-large "TYPE="button" NAME="into"  VALUE="  x  " OnClick="Calc.Input.value += ' * '">
+</div>
+<span class="br"></span>
+<div>
+<INPUT class=" w3-card w3-blue w3-padding w3-round-large " TYPE="button" NAME="clear"   VALUE="  C  " OnClick="Calc.Input.value = ''">
+<INPUT class="w3-card  w3-blue w3-padding w3-round-large " TYPE="button" NAME="Zero"   VALUE="  0  " OnClick="Calc.Input.value += '0'">
+<INPUT class="w3-card w3-blue w3-padding w3-round-large " TYPE="button" NAME="equal"   VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+<INPUT class="w3-card w3-green w3-padding w3-round-large "TYPE="button" NAME="mod"  VALUE="  /  " OnClick="Calc.Input.value += ' / '">
+<div>
+<span class="br"></span>
+</div>
+</centre>
+</Form>
+</body>
+</html>
